@@ -2,11 +2,11 @@
   "name": "odin-minimessageboard",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "private": "true",
   "type": "module",
   "scripts": {
-    "devstart": "nodemon app.js"
+    "devstart": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
