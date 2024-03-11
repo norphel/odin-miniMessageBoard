@@ -2,4 +2,13 @@ extends layout
 
 block content 
   h1= title 
-  
+  h2 All messages
+  - const msgs = messages
+  ul
+    each msg in msgs 
+      li 
+        p= msg.text
+        p= `- ${msg.user}` 
+        p= `${msg.added.toLocaleString()}`
+  a(href="/new") 
+    button(type="button") New message

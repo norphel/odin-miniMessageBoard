@@ -1,0 +1,10 @@
+extends layout 
+
+block content 
+  h2= title 
+  form(action="/new" method="POST")
+    label(for="user") Username
+      input(type="text" name="user" id="user" placeholder="User")  
+    label(for="message") Message
+      textarea(name="message", cols="30", rows="10" id="message" placeholder="Type your message here...") 
+    button(type="submit") Submit
