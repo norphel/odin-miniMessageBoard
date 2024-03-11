@@ -14,10 +14,8 @@ app.use(express.static("public"));
 
 // routes import
 import indexRouter from "./routes/index.route.js";
-import newMessageFormRouter from "./routes/newMessageForm.route.js";
 
 // routes declaration
 app.use("/", indexRouter);
-app.use("/new", newMessageFormRouter);
 
 export { app };
